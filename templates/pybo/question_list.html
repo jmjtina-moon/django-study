@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
 {% if question_list %}
 
 <ul>
@@ -10,3 +14,7 @@
 <p>질문이 없습니다</p>
 
 {% endif %}
+
+<a href="{% url 'pybo:question_create' %}" style="margin-top: 20px; font-size: 20px;">질문 등록하기</a>
+
+{% endblock %}
